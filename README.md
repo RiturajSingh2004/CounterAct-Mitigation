@@ -48,8 +48,8 @@ ipaddress==1.0.23<br>
 ## 🔧 Installation & Setup<br>
 
 ### Backend Setup<br>
-1. Install Python dependencies:<br>
-```bash<br>
+1. Install Python dependencies:
+```bash
 pip install flask flask-cors python-whois<br>
 ```<br>
 
@@ -144,16 +144,16 @@ Analyzes a provided URL for authenticity.<br>
 
 ## 📋 Requirements<br>
 
-### Backend<br>
-- Python 3.x<br>
-- Flask<br>
-- Internet connection for WHOIS and SSL verification<br>
-- Proper SSL configuration<br>
-- Network access for domain queries<br>
+### Backend
+- Python 3.x
+- Flask
+- Internet connection for WHOIS and SSL verification
+- Proper SSL configuration
+- Network access for domain queries
 
-### Frontend<br>
-- Chrome browser<br>
-- JavaScript enabled<br>
+### Frontend
+- Chrome browser
+- JavaScript enabled
 - Local storage access<br>
 - Network connectivity<br>
 

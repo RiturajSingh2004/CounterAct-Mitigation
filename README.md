@@ -50,99 +50,99 @@ ipaddress==1.0.23<br>
 ### Backend Setup<br>
 1. Install Python dependencies:
 ```bash
-pip install flask flask-cors python-whois<br>
-```<br>
+pip install flask flask-cors python-whois
+```
 
-2. Start the Flask server:<br>
-```bash<br>
-python app.py<br>
-```<br>
-The server will run on `http://localhost:5000`<br>
+2. Start the Flask server:
+```bash
+python app.py
+```
+The server will run on `http://localhost:5000`
 
-### Chrome Extension Setup<br>
-1. Open Chrome and navigate to `chrome://extensions/`<br>
-2. Enable "Developer mode"<br>
-3. Click "Load unpacked"<br>
-4. Select the extension directory containing the manifest and frontend files<br>
+### Chrome Extension Setup
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable "Developer mode"
+3. Click "Load unpacked"
+4. Select the extension directory containing the manifest and frontend files
 
-## 🔍 Features In Detail<br>
+## 🔍 Features In Detail
 
-### Domain Age Verification<br>
-- Checks domain registration date<br>
-- Multiple fallback strategies for date extraction<br>
-- Age-based risk assessment<br>
+### Domain Age Verification
+- Checks domain registration date
+- Multiple fallback strategies for date extraction
+- Age-based risk assessment
 
-### SSL Certificate Validation<br>
-- Validates SSL certificate authenticity<br>
-- Extracts certificate details including:<br>
-  - Subject information<br>
-  - Issuer details<br>
-  - Expiration date<br>
-- Connection timeout handling<br>
+### SSL Certificate Validation
+- Validates SSL certificate authenticity
+- Extracts certificate details including:
+  - Subject information
+  - Issuer details
+  - Expiration date
+- Connection timeout handling
 
-### URL Analysis<br>
-- Comprehensive URL parsing and validation<br>
-- IP address detection<br>
-- Suspicious keyword monitoring<br>
-- Risk factor aggregation<br>
+### URL Analysis
+- Comprehensive URL parsing and validation
+- IP address detection
+- Suspicious keyword monitoring
+- Risk factor aggregation
 
-### User Interface<br>
-- Clean and intuitive popup interface<br>
-- Real-time loading indicators<br>
-- Error messaging system<br>
-- Dark/Light theme toggle with local storage persistence<br>
-- Detailed results display including:<br>
-  - Authentication status<br>
-  - Risk details<br>
-  - Domain information<br>
-  - Age verification results<br>
+### User Interface
+- Clean and intuitive popup interface
+- Real-time loading indicators
+- Error messaging system
+- Dark/Light theme toggle with local storage persistence
+- Detailed results display including:
+  - Authentication status
+  - Risk detail
+  - Domain information
+  - Age verification results
 
-## 🔐 Security Measures<br>
+## 🔐 Security Measures
 
-- Input validation for all URL submissions<br>
-- Error handling for network timeouts<br>
-- SSL verification error catching<br>
-- Protection against malformed URLs<br>
-- Logging system for security monitoring<br>
+- Input validation for all URL submissions
+- Error handling for network timeouts
+- SSL verification error catching
+- Protection against malformed URLs
+- Logging system for security monitoring
 
-## 📝 API Endpoints<br>
+## 📝 API Endpoints
 
-### POST `/check_app`<br>
-Analyzes a provided URL for authenticity.<br>
+### POST `/check_app`
+Analyzes a provided URL for authenticity.
 
-**Request Body:**<br>
-```json<br>
-{<br>
-    "url": "https://example.com"<br>
-}<br>
-```<br>
+**Request Body:**
+```json
+{
+    "url": "https://example.com"
+}
+```
 
-**Response Format:**<br>
-```json<br>
-{<br>
-    "is_fake": boolean,<br>
-    "message": string,<br>
-    "details": string,<br>
-    "domain_info": {<br>
-        "domain": string,<br>
-        "age_info": {<br>
-            "age_days": number,<br>
-            "creation_date": string,<br>
-            "registrar": string<br>
-        }<br>
-    }<br>
-}<br>
-```<br>
+**Response Format:**
+```json
+{
+    "is_fake": boolean,
+    "message": string,
+    "details": string,
+    "domain_info": {
+        "domain": string,
+        "age_info": {
+            "age_days": number,
+            "creation_date": string,
+            "registrar": string
+        }
+    }
+}
+```
 
-## 🚀 Performance Considerations<br>
+## 🚀 Performance Considerations
 
-- Asynchronous API calls<br>
-- Efficient error handling<br>
-- Minimal DOM manipulation<br>
-- Theme preference caching<br>
-- Optimized certificate validation<br>
+- Asynchronous API calls
+- Efficient error handling
+- Minimal DOM manipulation
+- Theme preference caching
+- Optimized certificate validation
 
-## 📋 Requirements<br>
+## 📋 Requirements
 
 ### Backend
 - Python 3.x
@@ -154,9 +154,9 @@ Analyzes a provided URL for authenticity.<br>
 ### Frontend
 - Chrome browser
 - JavaScript enabled
-- Local storage access<br>
-- Network connectivity<br>
+- Local storage access
+- Network connectivity
 
-## 🤝 Open for Contributing<br>
-## 📄 License<br>
-This project is licensed under the MIT License - see the LICENSE file for details.<br>
+## 🤝 Open for Contributing
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.

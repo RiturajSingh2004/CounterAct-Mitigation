@@ -50,6 +50,9 @@ def check_domain_age(domain):
             }
         
         return None
+    except whois.parser.PywhoisError as e:
+        logger.warning(f"WHOIS lookup error for {domain}: {e}")
+        return None
     except Exception as e:
         logger.error(f"Unexpected error in domain age check: {e}")
         return None

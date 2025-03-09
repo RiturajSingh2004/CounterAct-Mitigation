@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            fetch('http://localhost:5000/check_app', {
+            fetch('https://counteract-mitigation.onrender.com/check_app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -106,6 +106,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         Registrar: ${ageInfo.registrar}
                         </small>`;
                 }
+
+                // Add legitimacy info if available
+                if (data.legitimacy_info) {
+                    resultContainer.innerHTML += `
+                        <br><small>
+                        Legitimacy: ${data.legitimacy_info.is_legitimate ? 'Legitimate' : 'Not Legitimate'}<br>
+                        Details: ${data.legitimacy_info.details}
+                        </small>`;
+                }
                 
                 // Apply appropriate styling based on authenticity
                 resultContainer.classList.add(data.is_fake ? 'error' : 'success');

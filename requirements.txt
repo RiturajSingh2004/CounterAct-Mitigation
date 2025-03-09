@@ -1,0 +1,5 @@
+fastapi
+python-whois
+uvicorn
+aiohttp
+python-dotenv

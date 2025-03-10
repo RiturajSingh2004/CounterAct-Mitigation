@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            fetch('http://localhost:5000/check_app', {
+            fetch('https://counteract-mitigation.onrender.com/check_app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -104,6 +104,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         Creation Date: ${ageInfo.creation_date}<br>
                         Domain Age: ${ageInfo.age_days} days<br>
                         Registrar: ${ageInfo.registrar}
+                        </small>`;
+                }
+
+                // Add legitimacy info if available
+                if (data.legitimacy_info) {
+                    resultContainer.innerHTML += `
+                        <br><small>
+                        Legitimacy: ${data.legitimacy_info.is_legitimate ? 'Legitimate' : 'Not Legitimate'}<br>
+                        Details: ${data.legitimacy_info.details}
                         </small>`;
                 }
                 

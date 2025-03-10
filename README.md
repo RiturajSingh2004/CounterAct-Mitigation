@@ -1,4 +1,7 @@
 # CounterAct-Mitigation
+## CounterAct-Mitigation (ver2.0)
+Flak is replaced with FasAPI, phishing detection API is included, hosted on Render
+## CounterAct-Mitigation (ver1.0)
 CounterAct Mitigation is a Browser Extension that check the authenticity and detail of current webpage to ensure safety of you and your system.<br>
 A robust web application authentication system that helps verify the legitimacy of web applications by analyzing various security parameters. This system combines a Flask backend API with a Chrome extension frontend to provide real-time authenticity checks for web applications.<br>
 
